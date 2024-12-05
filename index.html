@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Friend's Name] Birthday Manifesto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style id="theme-style">
+        body {
+            background: linear-gradient(to right, #fce4ec, #f8bbd0);
+            font-family: 'Arial', sans-serif;
+            color: #6a1b9a;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .hero {
+            background: url('https://cdn.pixabay.com/photo/2016/07/08/09/00/cake-1508038_1280.png') top right/contain no-repeat, 
+                        url('https://cdn.pixabay.com/photo/2020/04/15/20/20/flower-5048650_1280.png') bottom left/contain no-repeat,
+                        linear-gradient(to right, #f8bbd0, #fce4ec);
+            height: 350px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            color: white;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            border: 5px solid #f06292;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        .section {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff3e0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        .btn-custom {
+            background-color: #f06292;
+            color: white;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #d81b60;
+        }
+        footer {
+            background: #fff3e0;
+            padding: 10px;
+            border-top: 2px solid #e84393;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                height: 250px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+                text-align: center;
+                padding: 0 10px;
+            }
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+            .section {
+                padding: 15px;
+            }
+        }
+        @media (max-width: 576px) {
+            .hero {
+                height: 200px;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Light Mode Button -->
+    <div class="text-end p-3">
+        <button class="btn btn-outline-secondary" id="toggleTheme">
+            <i class="fas fa-moon"></i> Switch to Light Mode
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Celebrating [PLACEHOLDER_FOR_NAME]</h1>
+    </div>
+
+    <!-- Profile Image Section -->
+    <div class="text-center">
+        <img src="Jennifer1.png" alt="Jennifer's Photo" class="profile-img img-fluid">
+    </div>
+
+    <div class="container mt-4">
+        <!-- About Section -->
+        <div class="section text-center">
+            <h2><i class="fas fa-star text-warning"></i> About Me</h2>
+            <p>
+                Hello! I'm <strong>[PLACEHOLDER_FOR_NAME]</strong>. 🎉 <br>
+                This year has been a journey of growth, love, and achievements, and I'm thrilled to share my story with you.
+            </p>
+        </div>
+
+       <!-- Highlights Section -->
+<div class="section text-center">
+    <h2><i class="fas fa-trophy text-warning"></i> Highlights of the Year</h2>
+    <p>
+        Explore the moments that made this year special.
+    </p>
+    <a href="album.html" class="btn btn-custom px-4">
+        <i class="fas fa-camera-retro"></i> View Photo Album
+    </a>
+</div>
+
+
+
+ <!-- Game Buttons Section -->
+ <div class="container mt-4 text-center">
+    <div class="section">
+        <h2><i class="fas fa-gamepad"></i> Play Games</h2>
+        <p>Select a game to enjoy and have fun!</p>
+        <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+            <a href="tic-tac-toe.html" class="btn btn-custom btn-tic-tac-toe">
+                <i class="fas fa-times-circle"></i> Tic Tac Toe
+            </a>
+            <a href="tetris.html" class="btn btn-custom btn-tetris">
+                <i class="fas fa-cubes"></i> Tetris
+            </a>
+            <a href="riddles.html" class="btn btn-custom btn-riddles">
+                <i class="fas fa-brain"></i> Riddles
+            </a>
+        </div>
+    </div>
+
+<style>
+    .btn-custom {
+        background-color: #ff80ab;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        transition: background-color 0.3s;
+    }
+
+    .btn-custom:hover {
+        background-color: #f50057;
+    }
+
+    .btn-play-game {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #ff4081, #f50057);
+        color: #ffffff;
+        border-radius: 50px;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn-play-game:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(245, 0, 87, 0.5);
+    }
+
+    .btn-play-game span {
+        margin-right: 8px;
+        font-size: 1.5rem; /* Slightly larger for emphasis */
+    }
+
+    .mt-4 {
+        text-align: center;
+        margin-top: 30px;
+    }
+</style>
+
+
+
+    <!-- Contact Section -->
+<div class="section text-center">
+    <h2><i class="fas fa-envelope text-primary"></i> Let's Connect!</h2>
+    <p>
+        Send me a message on Instagram:
+    </p>
+    <a href="https://www.instagram.com/iam_neeemart" class="btn btn-custom px-4">
+        <i class="fab fa-instagram"></i> Chat on Instagram
+    </a>
+</div>
+
+
+    </div>
+
+    <footer class="text-center mt-4">
+        <p>Made with 💖 to celebrate [PLACEHOLDER_FOR_NAME]</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript to toggle light mode
+        const themeButton = document.getElementById('toggleTheme');
+        const themeStyle = document.getElementById('theme-style');
+
+        // Light mode CSS
+        const lightMode = `
+            body {
+                background: #ffffff;
+                color: #333333;
+            }
+            .hero {
+                background: #f5f5f5;
+                color: #333333;
+            }
+            .section {
+                background: #f9f9f9;
+                color: #333333;
+            }
+            footer {
+                background: #f5f5f5;
+                color: #333333;
+            }
+        `;
+
+        // Default theme CSS
+        const darkMode = themeStyle.innerHTML;
+
+        // Toggle theme
+        themeButton.addEventListener('click', () => {
+            if (themeButton.textContent.includes('Light Mode')) {
+                themeStyle.innerHTML = lightMode;
+                themeButton.innerHTML = '<i class="fas fa-sun"></i> Switch to Dark Mode';
+            } else {
+                themeStyle.innerHTML = darkMode;
+                themeButton.innerHTML = '<i class="fas fa-moon"></i> Switch to Light Mode';
+            }
+        });
+    </script>
+</body>
+</html>
